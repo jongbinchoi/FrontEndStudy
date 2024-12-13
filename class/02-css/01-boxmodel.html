@@ -8,6 +8,8 @@
                 box-sizing: border-box;
             }
 
+
+            
             div{
                 width: 80px;
                 height: 80px;
@@ -15,7 +17,17 @@
                 padding: 10px;
             }
 
-          /*  #contentBox{
+            .pb{
+                width: 200px;
+                height: 200px;
+                border: 1px solid blue;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+/*
+            #contentBox{
                 box-sizing: content-box;
             }
 
@@ -27,9 +39,15 @@
     </style>
 </head>
 <body>
-    <div id="contentBox">박스 1</div>
+    <!-- <div id="contentBox">박스 1</div>
     <div>박스 2</div>
-    <div id="borderBox">박스 3</div>
+    <div id="borderBox">박스 3</div> -->
+
+    <div class="pb">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
     
 </body>
 </html>
