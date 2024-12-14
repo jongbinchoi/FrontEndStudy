@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <link href="./02-signup.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="contentBox">
+        <h2 class="mainTitle">회원가입을 위해<br> 정보를 입력해주세요 </h2>
+
+        <p class="inputContent">*이메일</p><br>
+    
+        <input  class ="textBox" type="text">
+
+        <p class="inputContent">*이름</p><br>
+        <input  class ="textBox" type="text">
+        
+        <p class="inputContent">*비빌번호</p><br>
+        <input  class ="textBox"type="password">
+        
+        <p class="inputContent">*비빌번호 확인</p><br>
+        <input  class ="textBox" type="password">
+        
+        
+        <br><br>
+        
+        <!-- 두 라디오 태그는 같은 name이어야 함 -->
+        <div class="radioBox">
+        <label>
+            <input type="radio" name="gender">여성
+        </label>
+        &nbsp;&nbsp;&nbsp;
+        <label>    
+            <input type="radio" name="gender">남성
+        </label>
+        </div>
+
+
+        <br><br>
+        <div class="agreeBox">
+    
+        <input class="agreeText" type="checkbox"> &nbsp;이용약관 동의합니다
+        </div>
+        <hr class="custom-hr">
+    <br>
+        <button class="custom-b">가입하기</button>
+    </div>
+    </div>
+</body>
+</html>
