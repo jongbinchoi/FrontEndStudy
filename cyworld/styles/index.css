@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0px; /*기본값 초기화, 여백을 제거하기위함*/
+}
+
+.background{
+    width: 1024px;
+    height: 600px;
+    background-image: url("../images/background.png");
+    padding: 20px 0px 0px 20px;/*시계방향*/
+}
+
+.outerbox{
+    width: 808px;
+    height: 544px;
+    background-image: url("../images/outerbox.png");
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0px 0px 32px;
+}
+
+.wrapper__left{
+    width: 208px;
+    height: 472px;
+    
+    display: flex; /*div 태그라 한줄을 차지하는데 자동으로 수직된것처럼 보임 그러나 실제로 2개가 가로이기에 밀려서 수직처럼 보이는것 => 정렬옵션이 필요함*/
+    flex-direction: column;
+}
+
+.wrapper__left__header{
+    width: 100%; /*부모의 크기에 상대적으로 맞춤*/
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.today{
+    font-size: 9px;
+}
+
+.wrapper__left_body{
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*column이기에 align-item이 가로 정렬*/
+    padding: 20px 30px; /*상 하, 내용 간격 통일을 위함*/
+}
+
+.left__body__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left__body__header__gray{
+    width: 148px;
+    height: 133px;
+    background-color: #C4C4C4;
+}
+
+.left__body__header__line{
+    border-top: 1px dotted black;
+    margin: 12px 0px; /*상 하, 여백을 주기위해*/
+
+}
+
+.left__body__profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+}
+
+.body__profile__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* 추가: 아이템을 세로 방향으로 중앙 정렬 */
+    margin-bottom: 10px;
+}
+
+.body__profile__content{
+    font-weight: bold;
+    color: #999999;
+    margin-left: 8px; /*기존 &nbsp 으로 일일 입력해서 간격을 조절했는데 하나단 이기에 단체로 간격유지로 변경*/
+}
+
+.left__body__footer{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    font-size: 11px;
+    color:#000000 ;
+}
+
+.body__footer_style{
+    margin-top: 10px;
+}
+
+.wrapper__right{
+    width: 524px;
+    height: 472px;
+    background-color: brown;
+}
