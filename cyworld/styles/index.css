@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; /*column이기에 align-item이 가로 정렬*/
-    padding: 20px 30px; /*상 하, 내용 간격 통일을 위함*/
+    padding: 20px 30px; /*세로방향(상 하), 가로방향(왼쪽, 오른쪽) 내용 간격 통일을 위함*/
 }
 
 .left__body__header{
@@ -70,14 +70,16 @@
 
 .left__body__header__line{
     border-top: 1px dotted black;
-    margin: 12px 0px; /*상 하, 여백을 주기위해*/
+    margin: 12px 0px; /*세로방향(상 하), 가로방향(왼쪽, 오른쪽) 내용 간격 통일을 위함*/
 
 }
 
 .left__body__profile{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; /*확실히 기본값을 픽스해야함*/
     font-size: 9px;
 }
 
@@ -96,10 +98,11 @@
 
 .left__body__footer{
     width: 100%;
-    height: 140px;
+    /*height: 100%; 이걸 안해주면 내용물 크기에 맞춰 공간을 자치함*/
+    
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content:center;
     font-size: 11px;
     color:#000000 ;
 }
