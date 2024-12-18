@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    /* border-box 크기가 고정이라 원하는 크기로 설정가능, 패딩, 보더 계산 필요없음
+    margin: 0px은 기본값이 살짝 띄워져있기에 초기값을 설정해주기위함 */
+}
+
+/* 태그선택자 경우 그냥 작성 */
+/* iframe> html > body */
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* 100%는 부모태그를 기준 */
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;/*내용에따라 위치가 달라지므로 고정된 크기를 위함*/
+    
+
+}
+
+.wrapper__header{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.contents_title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title{
+    color: #55B2E4;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.subtitle{
+    font-size: 8px;
+    padding-left: 5px;
+}
+
+.divideLine{
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.contnets__body{
+    font-size: 11px;
+    color: gray;
+}
+
+.wrapper__body{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+.video{
+    width: 100%;
+    height: 240px;
+    background-color: #C4C4C4;
+}
