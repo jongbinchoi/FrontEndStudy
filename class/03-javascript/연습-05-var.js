@@ -7,59 +7,59 @@ false;
 // 데이터 타입과 값까지 같아야 True
 
 if (1 + 1 === 2) {
-  console.log("정답입니다");
+	console.log("정답입니다");
 } else {
-  console.log("틀렸습니다");
+	console.log("틀렸습니다");
 }
 // VM1048:2 정답입니다
 
 if (true) {
-  console.log("정답입니다");
+	console.log("정답입니다");
 } else {
-  console.log("틀렸습니다");
+	console.log("틀렸습니다");
 }
 // VM1185:2 정답입니다
 undefined;
 if (!true) {
-  console.log("정답입니다");
+	console.log("정답입니다");
 } else {
-  console.log("틀렸습니다");
+	console.log("틀렸습니다");
 }
 // VM1200:4 틀렸습니다
 undefined;
 if (0) {
-  console.log("정답입니다");
+	console.log("정답입니다");
 } else {
-  console.log("틀렸습니다");
+	console.log("틀렸습니다");
 }
 // VM1208:4 틀렸습니다
 // undefined
 if (1) {
-  console.log("정답입니다");
+	console.log("정답입니다");
 } else {
-  console.log("틀렸습니다");
+	console.log("틀렸습니다");
 }
 // VM1331:2 정답입니다
 undefined;
 if (null) {
-  console.log("정답입니다");
+	console.log("정답입니다");
 } else {
-  console.log("틀렸습니다");
+	console.log("틀렸습니다");
 }
 // VM1356:4 틀렸습니다
 
 const profile = {
-  name: "철수",
-  age: 12,
-  school: "다람쥐초등학교",
+	name: "철수",
+	age: 12,
+	school: "다람쥐초등학교",
 };
 // undefined;
 if (profile.age >= 20) {
-  console.log("성인입니다");
+	console.log("성인입니다");
 } else if (profile.age >= 8 && profile.age <= 19) {
-  console.log("학생입니다");
+	console.log("학생입니다");
 } else {
-  console.log("어린이입니다");
+	console.log("어린이입니다");
 }
 // VM2287:5 학생입니다
 
@@ -81,18 +81,3 @@ let a = String(Math.floor(Math.random() * 100000)).padStart(6, "0");
 // undefined
 a;
 // '042877'
-
-// 함수 선언식 , 호이스팅 문제
-function hello(name) {
-  alert(name + "님 안녕하세요");
-}
-
-// 함수 표현식, 익명함수
-const hello = function (name) {
-  alert(name + "님 안녕하세요");
-};
-
-// 화살표 함수(function과동일 간소화한것) <- 실무
-const hello = (name) => {
-  alert(name + "님 안녕하세요");
-};
