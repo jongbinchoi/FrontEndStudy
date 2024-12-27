@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wrapper_header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper_title {
+	display: flex;
+	flex-direction: row;
+	align-items: center; /*글씨위치가 다르기에때문에 가운데정렬을해야함*/
+}
+
+.title {
+	color: #55b2e4;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.subtitle {
+	font-size: 8px;
+	padding-left: 5px;
+}
+
+.divideLine {
+	width: 100%;
+	border-top: 1px solid gray;
+}
+
+.albumWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.album {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.song_name {
+	font-size: 11px;
+	font-weight: 700;
+	color: #0f465e;
+	margin-top: 10px;
+}
+
+.singer {
+	font-size: 10px;
+	font-weight: 700;
+	color: #999999;
+}
+
+.wrapper_body {
+	width: 100%;
+}
+
+.albumTable {
+	border-spacing: 0px;
+	width: 100%;
+	padding-top: 8px;
+}
+
+.albumTable th {
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: gray;
+	background-color: #eeeeee;
+	padding-top: 5px;
+	border-top: 1px solid gray;
+	border-bottom: 1px dashed gray;
+}
+
+.albumTable td {
+	height: 20px;
+	font-size: 10px;
+	color: #0f465e;
+	border-bottom: 1px dashed gray;
+}
+
+.album-table-checkbox {
+	width: 5%;
+	text-align: center;
+}
+
+.album-table-number {
+	width: 10%;
+	text-align: center;
+}
+
+.album-table-song {
+	width: 45%;
+	text-align: left;
+}
+
+.album-table-artist {
+	width: 30%;
+	text-align: left;
+}
+
+.arrow {
+	width: 10px;
+	height: 10px;
+	text-align: center;
+	color: red;
+}
+
+.albumTable__footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 10px;
+	padding-top: 10px;
+}
+.albumTable__footer button {
+	font-size: 8px;
+	color: gray;
+	padding: 3px;
+	background: linear-gradient(180deg, #ffffff 0%, #ffffff 57.43%, #dddddd 100%);
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+.albumTable__footer__center span {
+	color: red;
+}
